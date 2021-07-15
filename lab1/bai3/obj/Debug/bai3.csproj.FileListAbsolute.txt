@@ -1,0 +1,10 @@
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab1\bai3\bin\Debug\bai3.exe.config
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab1\bai3\bin\Debug\bai3.exe
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab1\bai3\bin\Debug\bai3.pdb
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab1\bai3\obj\Debug\bai3.csproj.AssemblyReference.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab1\bai3\obj\Debug\bai3.bai3.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab1\bai3\obj\Debug\bai3.Properties.Resources.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab1\bai3\obj\Debug\bai3.csproj.GenerateResource.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab1\bai3\obj\Debug\bai3.csproj.CoreCompileInputs.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab1\bai3\obj\Debug\bai3.exe
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab1\bai3\obj\Debug\bai3.pdb

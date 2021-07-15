@@ -1,0 +1,15 @@
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\bin\Debug\Bai1.exe.config
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\bin\Debug\Bai1.exe
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\bin\Debug\Bai1.pdb
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\obj\Debug\Bai1.csproj.AssemblyReference.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\obj\Debug\Bai1.bai1.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\obj\Debug\Bai1.Properties.Resources.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\obj\Debug\Bai1.csproj.GenerateResource.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\obj\Debug\Bai1.csproj.CoreCompileInputs.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\obj\Debug\Bai1.exe
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\obj\Debug\Bai1.pdb
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\bin\Debug\EntityFramework.dll
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\bin\Debug\EntityFramework.xml
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab5\Bai1\obj\Debug\Bai1.csproj.CopyComplete

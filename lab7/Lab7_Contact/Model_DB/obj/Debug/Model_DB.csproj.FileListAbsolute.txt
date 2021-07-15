@@ -1,0 +1,12 @@
+C:\Users\tungnh230802\source\repos\Lab7_Contact\Model_DB\bin\Debug\Model_DB.dll.config
+C:\Users\tungnh230802\source\repos\Lab7_Contact\Model_DB\bin\Debug\Model_DB.dll
+C:\Users\tungnh230802\source\repos\Lab7_Contact\Model_DB\bin\Debug\Model_DB.pdb
+C:\Users\tungnh230802\source\repos\Lab7_Contact\Model_DB\bin\Debug\EntityFramework.dll
+C:\Users\tungnh230802\source\repos\Lab7_Contact\Model_DB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tungnh230802\source\repos\Lab7_Contact\Model_DB\bin\Debug\EntityFramework.xml
+C:\Users\tungnh230802\source\repos\Lab7_Contact\Model_DB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tungnh230802\source\repos\Lab7_Contact\Model_DB\obj\Debug\Model_DB.csproj.CoreCompileInputs.cache
+C:\Users\tungnh230802\source\repos\Lab7_Contact\Model_DB\obj\Debug\Model_DB.csproj.CopyComplete
+C:\Users\tungnh230802\source\repos\Lab7_Contact\Model_DB\obj\Debug\Model_DB.dll
+C:\Users\tungnh230802\source\repos\Lab7_Contact\Model_DB\obj\Debug\Model_DB.pdb
+C:\Users\tungnh230802\source\repos\Lab7_Contact\Model_DB\obj\Debug\Model_DB.csproj.AssemblyReference.cache

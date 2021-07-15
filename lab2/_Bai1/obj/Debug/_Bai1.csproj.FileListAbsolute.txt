@@ -1,0 +1,10 @@
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab2\_Bai1\bin\Debug\_Bai1.exe.config
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab2\_Bai1\bin\Debug\_Bai1.exe
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab2\_Bai1\bin\Debug\_Bai1.pdb
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab2\_Bai1\obj\Debug\_Bai1.csproj.AssemblyReference.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab2\_Bai1\obj\Debug\_Bai1.Form1.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab2\_Bai1\obj\Debug\_Bai1.Properties.Resources.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab2\_Bai1\obj\Debug\_Bai1.csproj.GenerateResource.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab2\_Bai1\obj\Debug\_Bai1.csproj.CoreCompileInputs.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab2\_Bai1\obj\Debug\_Bai1.exe
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab2\_Bai1\obj\Debug\_Bai1.pdb

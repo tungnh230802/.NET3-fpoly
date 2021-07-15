@@ -1,0 +1,15 @@
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\bin\Debug\Bai1.exe.config
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\bin\Debug\Bai1.exe
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\bin\Debug\Bai1.pdb
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\obj\Debug\Bai1.csproj.AssemblyReference.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\obj\Debug\MainWindow.g.cs
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\obj\Debug\App.g.cs
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\obj\Debug\Bai1_MarkupCompile.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\obj\Debug\Bai1_MarkupCompile.lref
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\obj\Debug\MainWindow.baml
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\obj\Debug\Bai1.g.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\obj\Debug\Bai1.Properties.Resources.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\obj\Debug\Bai1.csproj.GenerateResource.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\obj\Debug\Bai1.csproj.CoreCompileInputs.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\obj\Debug\Bai1.exe
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\Lab8\Bai1\obj\Debug\Bai1.pdb

@@ -1,0 +1,15 @@
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\bin\Debug\DataLayer.dll
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\bin\Debug\DataLayer.pdb
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\bin\Debug\DataLayer.dll.config
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\bin\Debug\Model_DB.dll
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\bin\Debug\Model_DB.pdb
+C:\Users\tungnh230802\source\repos\Lab7_Contact\BusinessLayer\bin\Debug\Model_DB.dll.config

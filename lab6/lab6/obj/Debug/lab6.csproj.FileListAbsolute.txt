@@ -1,0 +1,15 @@
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\bin\Debug\lab6.exe.config
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\bin\Debug\lab6.exe
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\bin\Debug\lab6.pdb
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\bin\Debug\EntityFramework.dll
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\bin\Debug\EntityFramework.xml
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\obj\Debug\lab6.csproj.AssemblyReference.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\obj\Debug\lab6.Form1.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\obj\Debug\lab6.Properties.Resources.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\obj\Debug\lab6.csproj.GenerateResource.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\obj\Debug\lab6.csproj.CoreCompileInputs.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\obj\Debug\lab6.csproj.CopyComplete
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\obj\Debug\lab6.exe
+C:\Users\tungnh230802\OneDrive\WorkSpace\hocky3\c#3\workLab\lab6\lab6\obj\Debug\lab6.pdb

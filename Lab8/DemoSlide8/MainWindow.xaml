@@ -1,0 +1,62 @@
+﻿<Window x:Class="DemoSlide8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoSlide8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="388" Width="800">
+    <!--<Canvas Background="white">
+        <Button Width="100" Height="100" 
+                Canvas.Left="20" Canvas.Top="50">Button1</Button>
+        <Button Width="100" Height="100" 
+                Canvas.Left="100" Canvas.Top="100">Button1</Button>
+        <Button Width="100" Height="100" 
+                Canvas.Left="150" Canvas.Top="300">Button1</Button>
+    </Canvas>-->
+
+    <!--<StackPanel Orientation="Vertical" Background="Azure">
+        <Label Background="LightBlue">Orientation=vertical</Label>
+        <Button>Default</Button>
+        <Button HorizontalAlignment="left">Left</Button>
+        <Button HorizontalAlignment="Center">Left</Button>
+        <Button HorizontalAlignment="Right">Left</Button>
+        <Button HorizontalAlignment="Stretch">Left</Button>
+
+        <Label Background="LightBlue">Orientaton="Horizontal"</Label>
+        <StackPanel Orientation="Horizontal" Background="Aqua" Height="263">
+            <Button>Default</Button>
+            <Button VerticalAlignment="Bottom">Left</Button>
+            <Button VerticalAlignment="top">Left</Button>
+            <Button VerticalAlignment="Center">Left</Button>
+            <Button VerticalAlignment="Stretch">Left</Button>
+        </StackPanel>
+    </StackPanel>-->
+
+    <!--<DockPanel LastChildFill="True">
+        <Button DockPanel.Dock="Top">Top 1</Button>
+        <Button DockPanel.Dock="Right">Right 1</Button>
+        <Button DockPanel.Dock="Top">Top 2</Button>
+        <Button DockPanel.Dock="Bottom">Bottom 1</Button>
+        <Button DockPanel.Dock="Left" VerticalAlignment="Top" Height="50">Left, verali=left</Button>
+        <Button DockPanel.Dock="Bottom" HorizontalAlignment="Right" Height="50">Bottom 2, Halign=left</Button>
+        <Button>Add more controls here</Button>
+    </DockPanel>-->
+
+    <!--<Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100">
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Column="1" Grid.Row="0" Height="50">Button1</Button>
+        <Button Grid.Column="0" Grid.Row="1" Height="50">Button2</Button>
+        <Button Grid.Column="1" Grid.Row="2" Height="50">Button3</Button>
+        <Button Grid.Column="0" Grid.Row="3" Height="50">Button4</Button>
+    </Grid>-->
+</Window>
