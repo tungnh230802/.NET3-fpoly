@@ -1,0 +1,10 @@
+C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#3\workLab\lab3\lab3\obj\Debug\bai1.csproj.AssemblyReference.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#3\workLab\lab3\lab3\obj\Debug\lab3.bai1.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#3\workLab\lab3\lab3\obj\Debug\lab3.Properties.Resources.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#3\workLab\lab3\lab3\obj\Debug\bai1.csproj.GenerateResource.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#3\workLab\lab3\lab3\obj\Debug\bai1.csproj.CoreCompileInputs.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#3\workLab\lab3\lab3\obj\Debug\lab3.exe
+C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#3\workLab\lab3\lab3\obj\Debug\lab3.pdb
+C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#3\workLab\lab3\lab3\bin\Debug\lab3.exe.config
+C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#3\workLab\lab3\lab3\bin\Debug\lab3.exe
+C:\Users\tungnh230802\OneDrive\WorkSpace\.Net\c#3\workLab\lab3\lab3\bin\Debug\lab3.pdb

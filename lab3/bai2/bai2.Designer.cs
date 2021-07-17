@@ -31,9 +31,9 @@ namespace bai2
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbo_lop = new System.Windows.Forms.ComboBox();
             this.nmud_gard = new System.Windows.Forms.NumericUpDown();
             this.dtp_Birthdate = new System.Windows.Forms.DateTimePicker();
-            this.txb_lop = new System.Windows.Forms.TextBox();
             this.txb_diachi = new System.Windows.Forms.TextBox();
             this.txb_ten = new System.Windows.Forms.TextBox();
             this.txb_ma = new System.Windows.Forms.TextBox();
@@ -69,9 +69,9 @@ namespace bai2
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbo_lop);
             this.groupBox1.Controls.Add(this.nmud_gard);
             this.groupBox1.Controls.Add(this.dtp_Birthdate);
-            this.groupBox1.Controls.Add(this.txb_lop);
             this.groupBox1.Controls.Add(this.txb_diachi);
             this.groupBox1.Controls.Add(this.txb_ten);
             this.groupBox1.Controls.Add(this.txb_ma);
@@ -88,6 +88,14 @@ namespace bai2
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin học sinh";
+            // 
+            // cbo_lop
+            // 
+            this.cbo_lop.FormattingEnabled = true;
+            this.cbo_lop.Location = new System.Drawing.Point(145, 121);
+            this.cbo_lop.Name = "cbo_lop";
+            this.cbo_lop.Size = new System.Drawing.Size(269, 29);
+            this.cbo_lop.TabIndex = 14;
             // 
             // nmud_gard
             // 
@@ -111,13 +119,6 @@ namespace bai2
             this.dtp_Birthdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dtp_Birthdate.Size = new System.Drawing.Size(269, 29);
             this.dtp_Birthdate.TabIndex = 12;
-            // 
-            // txb_lop
-            // 
-            this.txb_lop.Location = new System.Drawing.Point(145, 126);
-            this.txb_lop.Name = "txb_lop";
-            this.txb_lop.Size = new System.Drawing.Size(269, 29);
-            this.txb_lop.TabIndex = 10;
             // 
             // txb_diachi
             // 
@@ -274,6 +275,7 @@ namespace bai2
             this.Name = "bai2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "bai1";
+            this.Load += new System.EventHandler(this.bai2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmud_gard)).EndInit();
@@ -291,7 +293,6 @@ namespace bai2
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.NumericUpDown nmud_gard;
         private System.Windows.Forms.DateTimePicker dtp_Birthdate;
-        private System.Windows.Forms.TextBox txb_lop;
         private System.Windows.Forms.TextBox txb_diachi;
         private System.Windows.Forms.TextBox txb_ten;
         private System.Windows.Forms.TextBox txb_ma;
@@ -307,6 +308,7 @@ namespace bai2
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cbo_lop;
     }
 }
 
