@@ -57,12 +57,9 @@ namespace bai2
                 db.Tables["hocsinh"].Rows.Add(row);
                 SqlCommandBuilder builder = new SqlCommandBuilder(ada);
                 ada.Update(db.Tables["hocsinh"]);
-
-                MessageBox.Show("Save success!");
             }
             catch
             {
-                MessageBox.Show("Save Error!");
                 db.Tables["hocsinh"].Rows.Remove(row);
             }
 
@@ -75,7 +72,7 @@ namespace bai2
             string query = "select * from hocsinh";
             ada = new SqlDataAdapter(query, con);
 
-            db.Tables["hocsinh"].Rows.RemoveAt(row);
+            db.Tables["hocsinh"].Rows[row].Delete();
 
             SqlCommandBuilder builder = new SqlCommandBuilder(ada);
             ada.Update(db.Tables["hocsinh"]);
@@ -91,9 +88,14 @@ namespace bai2
             DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
             txb_ma.Text = row.Cells[0].Value.ToString();
             txb_ten.Text = row.Cells[1].Value.ToString();
-            dtp_Birthdate.Value = DateTime.Parse(row.Cells[2].Value.ToString());
+            try
+            {
+                dtp_Birthdate.Value = DateTime.Parse(row.Cells[2].Value.ToString());
+                nmud_gard.Value = decimal.Parse(row.Cells[4].Value.ToString());
+            }
+            catch { dtp_Birthdate.Value = DateTime.Now; }
             txb_diachi.Text = row.Cells[3].Value.ToString();
-            cbo_lop.SelectedItem = row.Cells[4].Value.ToString();
+            cbo_lop.SelectedItem = row.Cells[5].Value.ToString();
         }
     }
 }
