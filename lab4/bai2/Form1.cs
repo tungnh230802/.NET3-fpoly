@@ -13,6 +13,12 @@ namespace bai2
 {
     public partial class bai2 : Form
     {
+        DataSet set;
+        DataView dv;
+        SqlDataAdapter dataAdapter;
+        SqlConnection con = new SqlConnection(@"data source = DESKTOP-2V5F3CA\TUNGNH230802;
+                                        database = quanly;
+                                        integrated security=SSPI");
         public bai2()
         {
             InitializeComponent();
@@ -24,7 +30,7 @@ namespace bai2
         /// </summary>
         void LoadData()
         {
-            DataSet set = GetData();
+            set = GetData();
 
             DataTable usersTable = set.Tables["users"];
             DataTable groupsTable = set.Tables["groups"];
@@ -36,7 +42,7 @@ namespace bai2
 
             set.Relations.Add(relation);
 
-            DataView dv = set.Tables["users"].DefaultView;
+            dv = set.Tables["users"].DefaultView;
             dataGridView1.DataSource = dv;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
@@ -45,16 +51,12 @@ namespace bai2
         /// hàm lấy data từ database
         /// </summary>
         /// <returns>dataset</returns>
-        private static DataSet GetData()
+        private DataSet GetData()
         {
-            var con = new SqlConnection(@"data source = DESKTOP-2V5F3CA\TUNGNH230802;
-                                        database = quanly;
-                                        integrated security=SSPI");
-
             con.Open();
 
             var cmd = "select * from users";
-            var dataAdapter = new SqlDataAdapter(cmd, con);
+            dataAdapter = new SqlDataAdapter(cmd, con);
             var dataset = new DataSet();
 
             dataAdapter.Fill(dataset, "users");
@@ -88,29 +90,28 @@ namespace bai2
         /// <param name="e"></param>
         private void btn_add_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"data source = DESKTOP-2V5F3CA\TUNGNH230802;
-                                        database = quanly;
-                                        integrated security=SSPI");
-            string query = ($"insert into users" +
-                $" values('{txb_Name.Text}',{int.Parse(txb_groupid.Text)})");
-            SqlCommand cmd = new SqlCommand(query,conn);
+            var cmd = "select * from users";
+            dataAdapter = new SqlDataAdapter(cmd, con);
+
+            dv.AllowNew = true;
+            DataRowView newRow = dv.AddNew();
+            newRow.BeginEdit();
+            newRow["userName"] = txb_Name.Text;
             try
             {
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("đã thêm dữ liệu thành công!");
-                LoadData();
+                newRow["groupId"] = Convert.ToInt32(txb_groupid.Text);
+                newRow.EndEdit();
+                SqlCommandBuilder builder = new SqlCommandBuilder(dataAdapter);
+                dataAdapter.Update(set.Tables["users"]);
             }
             catch
             {
-                MessageBox.Show("thêm không thành công! vui lòng kiểm tra lại dữ liệu");
+                newRow.Delete();
             }
             finally
             {
-                conn.Close();
+                LoadData();
             }
-
-
         }
 
         /// <summary>
@@ -120,36 +121,16 @@ namespace bai2
         /// <param name="e"></param>
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            // lấy ra userid đang chọn
-            int userid = int.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells["userid"].Value.ToString());
+            int row = dataGridView1.CurrentRow.Index;
 
-            SqlConnection conn = new SqlConnection(@"data source = DESKTOP-2V5F3CA\TUNGNH230802;
-                                        database = quanly;
-                                        integrated security=SSPI");
-            string query = ($"delete from users where userid = @userid");
+            dv.AllowDelete = true;
+            dv.Table.Rows[row].Delete();
 
-            SqlCommand cmd = new SqlCommand(query, conn);
+            var cmd = "select * from users";
+            dataAdapter = new SqlDataAdapter(cmd, con);
 
-            SqlParameter param = new SqlParameter() { ParameterName = "@userid", Value = userid };
-
-            cmd.Parameters.Add(param);
-
-            try
-            {
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("đã xóa thành công");
-                LoadData();
-            }
-            catch
-            {
-                MessageBox.Show("xóa không thành công");
-            }
-            finally
-            {
-                conn.Close();
-            }
-
+            SqlCommandBuilder builder = new SqlCommandBuilder(dataAdapter);
+            dataAdapter.Update(set.Tables["users"]);
         }
 
         /// <summary>
@@ -159,40 +140,9 @@ namespace bai2
         /// <param name="e"></param>
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // dùng để đổ dữ liệu cell đang chọn vào textbox username và groupid
-
-            int userID = int.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells["userid"].Value.ToString());
-
-            SqlConnection conn =  new SqlConnection(@"data source = DESKTOP-2V5F3CA\TUNGNH230802;
-                                        database = quanly;
-                                        integrated security=SSPI");
-
-            string query = ($"select * from users " +
-                $"where userid = @userid");
-            SqlCommand cmd = new SqlCommand(query,conn);
-            SqlParameter param = new SqlParameter()
-            {
-                ParameterName = "@userid",
-                Value = userID,
-            };
-            cmd.Parameters.Add(param);
-       
-            try
-            {
-                conn.Open();
-                SqlDataReader sdr = cmd.ExecuteReader();
-
-                while (sdr.Read())
-                {
-                    txb_Name.Text = sdr["username"].ToString();
-                    txb_groupid.Text = sdr["groupid"].ToString();
-                }
-            }
-            catch { }
-            finally
-            {
-                conn.Close();
-            }
+            DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+            txb_Name.Text = row.Cells[1].Value.ToString();
+            txb_groupid.Text = row.Cells[2].Value.ToString();
         }
 
         /// <summary>
@@ -202,38 +152,27 @@ namespace bai2
         /// <param name="e"></param>
         private void btn_edit_Click(object sender, EventArgs e)
         {
-            int userID = int.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells["userid"].Value.ToString());
+            int row = dataGridView1.CurrentRow.Index;
 
-            SqlConnection conn = new SqlConnection(@"data source = DESKTOP-2V5F3CA\TUNGNH230802;
-                                        database = quanly;
-                                        integrated security=SSPI");
+            var cmd = "select * from users";
+            dataAdapter = new SqlDataAdapter(cmd, con);
 
-            string query = ($"update users " +
-                $"set username = @username, " +
-                $"groupid = @groupid " +
-                $"where userid = @userid");
-
-            SqlCommand cmd = new SqlCommand(query, conn);
-
-            SqlParameter paramUserName = new SqlParameter() { ParameterName = "@username", Value = txb_Name.Text };
-            SqlParameter paramGroupId = new SqlParameter() { ParameterName = "@groupid", Value = int.Parse(txb_groupid.Text) };
-            SqlParameter paramUserID = new SqlParameter() { ParameterName = "@userid", Value = userID };
-
-            cmd.Parameters.Add(paramUserName);
-            cmd.Parameters.Add(paramUserID);
-            cmd.Parameters.Add(paramGroupId);
-
+            dv.AllowEdit = true;
+            dv[row].BeginEdit();
+            dv[row]["userName"] = txb_Name.Text;
             try
             {
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("đã cập nhật thành công");
-                LoadData();
+                dv[row]["groupId"] = Convert.ToInt32(txb_groupid.Text);
+                dv[row].EndEdit();
+                SqlCommandBuilder builder = new SqlCommandBuilder(dataAdapter);
+                dataAdapter.Update(set.Tables["users"]);
             }
-            catch { MessageBox.Show("không thể cập nhật"); }
+            catch
+            {
+            }
             finally
             {
-                conn.Close();
+                LoadData();
             }
         }
     }
