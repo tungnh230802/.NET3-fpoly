@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="fpl_daotaoModelStoreContainer" CdmEntityContainer="fpl_daotaoEntities1">
+    <EntitySetMapping Name="grades">
+      <EntityTypeMapping TypeName="fpl_daotaoModel.grade">
+        <MappingFragment StoreEntitySet="grade">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="tienganh" ColumnName="tienganh" />
+          <ScalarProperty Name="tinhoc" ColumnName="tinhoc" />
+          <ScalarProperty Name="GDTC" ColumnName="GDTC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="students">
+      <EntityTypeMapping TypeName="fpl_daotaoModel.student">
+        <MappingFragment StoreEntitySet="students">
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="hoten" ColumnName="hoten" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="sodt" ColumnName="sodt" />
+          <ScalarProperty Name="gioitinh" ColumnName="gioitinh" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="hinh" ColumnName="hinh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="fpl_daotaoModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users_Login">
+      <EntityTypeMapping TypeName="fpl_daotaoModel.users_Login">
+        <MappingFragment StoreEntitySet="users_Login">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="passwork" ColumnName="passwork" />
+          <ScalarProperty Name="role" ColumnName="role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

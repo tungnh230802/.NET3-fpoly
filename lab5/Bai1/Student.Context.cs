@@ -13,10 +13,10 @@ namespace Bai1
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class studentInfomationEntities : DbContext
+    public partial class studentinformationEntities : DbContext
     {
-        public studentInfomationEntities()
-            : base("name=studentInfomationEntities")
+        public studentinformationEntities()
+            : base("name=studentinformationEntities")
         {
         }
     

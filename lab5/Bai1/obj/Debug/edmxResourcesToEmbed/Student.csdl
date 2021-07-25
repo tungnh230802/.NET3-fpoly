@@ -10,7 +10,7 @@
     <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
-  <EntityContainer Name="studentInfomationEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="studentinformationEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="studentdetails" EntityType="Self.studentdetail" />
   </EntityContainer>
 </Schema>
