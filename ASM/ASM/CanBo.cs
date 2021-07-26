@@ -20,6 +20,7 @@ namespace ASM
             dgv_students.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
+        // load all sinh viên lên datagridview
         private void FillData()
         {
             dgv_students.DataSource = db.students.Select(x => new
@@ -35,6 +36,7 @@ namespace ASM
             loadImg(null);
         }
 
+        // thông báo kết quả khi thực hiện 1 thao tác
         private void ShowStatus(bool result, string str)
         {
             if (result)
@@ -49,7 +51,7 @@ namespace ASM
                   MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
+        // xóa trống các textbox,picturebox,radio,...
         private void ClearField()
         {
             txb_id.Text = "";
@@ -62,11 +64,13 @@ namespace ASM
             loadImg(null);
         }
 
+        // sự kiện click btn new
         private void btn_new_Click(object sender, EventArgs e)
         {
             ClearField();
         }
 
+        // save sinh viên
         private bool SaveStudentDetail(student st)
         {
             bool result = false;
@@ -83,11 +87,12 @@ namespace ASM
                 db.SaveChanges();
                 result = true;
             }
-            catch { }
+            catch { db.students.Remove(st); }
 
             return result;
         }
 
+        //sự kiện click btn save
         private void btn_save_Click(object sender, EventArgs e)
         {
             bool result = false;
@@ -97,6 +102,7 @@ namespace ASM
             ShowStatus(result, "Save");
         }
 
+        // xóa điểm
         private bool DeleteStudentDetail(student st)
         {
             bool result = false;
@@ -111,6 +117,7 @@ namespace ASM
             return result;
         }
 
+        // sự kiện btn delete
         private void btn_delete_Click(object sender, EventArgs e)
         {
             bool result = false;
@@ -119,9 +126,10 @@ namespace ASM
             ShowStatus(result, "Delete");
         }
 
+        // kiểm tra 1 cell trong dataview, nếu null thì hiển thị "rỗng"
+        // nếu không null sẽ hiện thì lên dataview
         private void CheckDataNull(object obj, TextBox txb)
         {
-            // fix lỗi column trong dataview nếu bị bị null
             if(obj is null)
             {
                 txb.Text = "";
@@ -149,6 +157,7 @@ namespace ASM
         {
             //load img
             // nếu stundent có ảnh thì load lên picturebox, nếu không thì sẽ có ảnh mặc định
+            // nếu đưỡng dẫn bị lỗi sẽ hiện thị ảnh mặc định
             if(obj!=null)
             {
                 try
@@ -184,11 +193,13 @@ namespace ASM
 
         }
 
+        // sự kiện cellclick trong dataview
         private void dgv_students_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             BidingData();
         }
 
+        // update điểm
         private bool UpdateStudentDetail(student st)
         {
             bool result = false;
@@ -207,6 +218,8 @@ namespace ASM
             catch { }
             return result;
         }
+
+        // sự kiện click btn update
         private void btn_update_Click(object sender, EventArgs e)
         {
             bool result = false;

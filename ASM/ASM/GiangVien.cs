@@ -21,10 +21,9 @@ namespace ASM
             dgv_sinhvien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-
+        // load 3 sinh viên có điểm cao nhất vào datagridview
         private void fillData()
         {
-            // load 3 sinh viên có điểm cao nhất vào datagridview
             dgv_sinhvien.DataSource = db.grades.Select(x => new
             {
                 id = x.id,
@@ -37,7 +36,7 @@ namespace ASM
             }).OrderByDescending(x => x.DiemTB).Take(3).ToList();
         }
 
-        // thông báo result khi thực hiện 1 thao tác
+        // thông báo kết quả khi thực hiện 1 thao tác
         private void ShowStatus(bool result, string str)
         {
             if (result)
@@ -63,11 +62,13 @@ namespace ASM
             txb_gdtc.Text = "";
         }
 
+        // sự kiện click btn new
         private void btn_new_Click(object sender, EventArgs e)
         {
             ClearField();
         }
 
+        // save điểm
         private bool SaveGradeDetail(grade gr)
         {
             bool result = false;
@@ -81,12 +82,15 @@ namespace ASM
                 db.SaveChanges();
                 result = true;
             }
-            catch { }
+            catch 
+            {
+                db.grades.Remove(gr);   
+            }
 
             return result;
         }
 
-        // save điểm
+        //sự kiện click btn save
         private void btn_save_Click(object sender, EventArgs e)
         {
             bool result = false;
@@ -96,7 +100,7 @@ namespace ASM
 
             ShowStatus(result, "Save");
         }
-
+        // xóa điểm
         private bool deleteGradeDetail(grade gr)
         {
             bool result = false;
@@ -110,7 +114,7 @@ namespace ASM
             return result;
         }
 
-        // xóa điểm
+        // sự kiện btn delete
         private void btn_delete_Click(object sender, EventArgs e)
         {
             bool result = false;
@@ -124,7 +128,8 @@ namespace ASM
 
         private void CheckDataNull(object obj, TextBox txb)
         {
-            // fix lỗi column trong dataview nếu bị bị null
+            // kiểm tra cell trong dataview, nếu null thì hiển thị "rỗng"
+            // nếu không null sẽ hiện thì lên dataview
             if (obj is null)
             {
                 txb.Text = "";
@@ -135,6 +140,7 @@ namespace ASM
             }
         }
 
+        // lấy dữ liệu trong dataview đổ lên các textbox, label,.. tương ứng
         private void BidingData()
         {
             try
@@ -150,11 +156,13 @@ namespace ASM
             catch { }
         }
 
+        // sự kiện cellchange trong dataview
         private void dgv_sinhvien_CurrentCellChanged(object sender, EventArgs e)
         {
             BidingData();
         }
 
+        // update điểm
         private bool updataGradeDetail(grade gr)
         {
             bool result = false;
@@ -172,6 +180,7 @@ namespace ASM
             return result;
         }
 
+        // sự kiện click btn update
         private void btn_update_Click(object sender, EventArgs e)
         {
             bool result = false;
@@ -182,6 +191,7 @@ namespace ASM
             ShowStatus(result, "Update");
         }
 
+        // tìm sinh viên theo mã sv
         private void btn_search_Click(object sender, EventArgs e)
         {
             var gradeFind = db.grades.Where(x => x.masv == txb_find.Text).Select(x => new
@@ -205,6 +215,8 @@ namespace ASM
             }
         }
 
+        // sự kiện click btn "<<"
+        // chọn sinh viên cuối cùng trong dataview
         private void btn_first_Click(object sender, EventArgs e)
         {
             int first = 0;
@@ -213,7 +225,8 @@ namespace ASM
         }
 
 
-
+        // sự kiện click btn "<"
+        // chọn sinh viên ở phía trước trong dataview
         private void btn_previous_Click(object sender, EventArgs e)
         {
             int pre = dgv_sinhvien.CurrentRow.Index - 1;
@@ -224,6 +237,8 @@ namespace ASM
             }
         }
 
+        // sự kiện click btn ">"
+        // chọn sinh viên ở phía sau trong dataview
         private void btn_next_Click(object sender, EventArgs e)
         {
             int next = dgv_sinhvien.CurrentRow.Index + 1;
@@ -234,6 +249,8 @@ namespace ASM
             }
         }
 
+        // sự kiện click btn ">>"
+        // chọn sinh viên cuối cùng trước trong dataview
         private void btn_last_Click(object sender, EventArgs e)
         {
             int last = dgv_sinhvien.Rows.Count - 1;
