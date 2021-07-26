@@ -44,7 +44,7 @@ namespace ASM
                    {
                         this.Hide();
                         GiangVien frm_gv = new GiangVien();
-                        frm_gv.ShowDialog(this);
+                        frm_gv.ShowDialog();
                         this.Show();
                     }
                 }
