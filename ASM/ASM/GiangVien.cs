@@ -126,32 +126,18 @@ namespace ASM
             ShowStatus(result, "delete");
         }
 
-        private void CheckDataNull(object obj, TextBox txb)
-        {
-            // kiểm tra cell trong dataview, nếu null thì hiển thị "rỗng"
-            // nếu không null sẽ hiện thì lên dataview
-            if (obj is null)
-            {
-                txb.Text = "";
-            }
-            else
-            {
-                txb.Text = obj.ToString();
-            }
-        }
-
         // lấy dữ liệu trong dataview đổ lên các textbox, label,.. tương ứng
         private void BidingData()
         {
             try
             {
-                CheckDataNull(dgv_sinhvien.SelectedCells[0].OwningRow.Cells["id"].Value, txb_id);
-                CheckDataNull(dgv_sinhvien.SelectedCells[0].OwningRow.Cells["masv"].Value, txb_ma);
-                CheckDataNull(dgv_sinhvien.SelectedCells[0].OwningRow.Cells["hoten"].Value, txb_name);
-                CheckDataNull(dgv_sinhvien.SelectedCells[0].OwningRow.Cells["tienganh"].Value, txb_tienganh);
-                CheckDataNull(dgv_sinhvien.SelectedCells[0].OwningRow.Cells["tinhoc"].Value, txb_tinhoc);
-                CheckDataNull(dgv_sinhvien.SelectedCells[0].OwningRow.Cells["GDTC"].Value, txb_gdtc);
-                lb_diemtb.Text = dgv_sinhvien.SelectedCells[0].OwningRow.Cells["DiemTB"].Value.ToString();
+                txb_id.Text = dgv_sinhvien.SelectedCells[0].OwningRow.Cells["id"].Value?.ToString();
+                txb_ma.Text = dgv_sinhvien.SelectedCells[0].OwningRow.Cells["masv"].Value?.ToString();
+                txb_name.Text = dgv_sinhvien.SelectedCells[0].OwningRow.Cells["hoten"].Value?.ToString();
+                txb_tienganh.Text = dgv_sinhvien.SelectedCells[0].OwningRow.Cells["tienganh"].Value?.ToString();
+                txb_tinhoc.Text =  dgv_sinhvien.SelectedCells[0].OwningRow.Cells["tinhoc"].Value?.ToString();
+                txb_gdtc.Text =  dgv_sinhvien.SelectedCells[0].OwningRow.Cells["GDTC"].Value?.ToString();
+                lb_diemtb.Text = dgv_sinhvien.SelectedCells[0].OwningRow.Cells["DiemTB"].Value?.ToString();
             }
             catch { }
         }

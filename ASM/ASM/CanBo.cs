@@ -126,20 +126,6 @@ namespace ASM
             ShowStatus(result, "Delete");
         }
 
-        // kiểm tra 1 cell trong dataview, nếu null thì hiển thị "rỗng"
-        // nếu không null sẽ hiện thì lên dataview
-        private void CheckDataNull(object obj, TextBox txb)
-        {
-            if(obj is null)
-            {
-                txb.Text = "";
-            }
-            else
-            {
-                txb.Text = obj.ToString();
-            }
-        }
-
         private void ConverGender(bool Gender)
         {
             // nếu true thì radio "nam" sẽ được checked và ngược lại
@@ -180,13 +166,13 @@ namespace ASM
         {
             try
             {
-                txb_id.Text = dgv_students.SelectedCells[0].OwningRow.Cells["masv"].Value.ToString();
-                ConverGender(bool.Parse(dgv_students.SelectedCells[0].OwningRow.Cells["gioitinh"].Value.ToString()));
-                CheckDataNull(dgv_students.SelectedCells[0].OwningRow.Cells["hoten"].Value, txb_name);
-                CheckDataNull(dgv_students.SelectedCells[0].OwningRow.Cells["email"].Value, txb_email);
-                CheckDataNull(dgv_students.SelectedCells[0].OwningRow.Cells["sodt"].Value, txb_phone);
-                CheckDataNull(dgv_students.SelectedCells[0].OwningRow.Cells["diachi"].Value, txb_address);
-                CheckDataNull(dgv_students.SelectedCells[0].OwningRow.Cells["hinh"].Value, txb_img);
+                txb_id.Text = dgv_students.SelectedCells[0].OwningRow.Cells["masv"].Value?.ToString();
+                ConverGender(bool.Parse(dgv_students.SelectedCells[0].OwningRow.Cells["gioitinh"].Value?.ToString()));
+                txb_name.Text = dgv_students.SelectedCells[0].OwningRow.Cells["hoten"].Value?.ToString();
+                txb_email.Text = dgv_students.SelectedCells[0].OwningRow.Cells["email"].Value?.ToString();
+                txb_phone.Text = dgv_students.SelectedCells[0].OwningRow.Cells["sodt"].Value?.ToString();
+                txb_address.Text = dgv_students.SelectedCells[0].OwningRow.Cells["diachi"].Value.ToString();
+                txb_img.Text = dgv_students.SelectedCells[0].OwningRow.Cells["hinh"].Value.ToString();
                 loadImg(dgv_students.SelectedCells[0].OwningRow.Cells["hinh"].Value);
             }
             catch { }
